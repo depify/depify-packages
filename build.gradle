@@ -19,7 +19,7 @@ class CalabashTask extends DefaultTask {
 @TaskAction
   def calabashAction() {
     def args = [
-    	"-D",
+    	"--info",
    	"-oresult=dist/packages.xml",	
       	"src/xproc/test.xpl"
     ]
