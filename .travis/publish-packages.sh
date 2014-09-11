@@ -2,7 +2,6 @@
 
 set | grep TRAVIS
 
-if [ "$TRAVIS_REPO_SLUG" == "$GIT_PUB_REPO" ]; then
     echo -e "Setting up for publishing depify packages.xml ...\n"
 
     cp -R dist $HOME/packages
@@ -30,4 +29,3 @@ if [ "$TRAVIS_REPO_SLUG" == "$GIT_PUB_REPO" ]; then
     else
         echo -e "Publication cannot be performed on pull requests.\n"
     fi
-fi
