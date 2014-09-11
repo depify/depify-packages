@@ -25,6 +25,7 @@ class CalabashTask extends DefaultTask {
     ]
 
     Main.main(args as String[])
+    
   }
 }
 
