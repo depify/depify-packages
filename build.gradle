@@ -23,7 +23,7 @@ class CalabashTask extends DefaultTask {
     def args = [
     	"--debug",
    	"-oresult=dist/packages.xml",	
-      	"src/xproc/test.xpl"
+      	"src/xproc/generate-package.xpl"
     ]
 
     Main.main(args as String[])
