@@ -19,7 +19,6 @@ class CalabashTask extends DefaultTask {
 @TaskAction
   def calabashAction() {
     def args = [
-    	"-isource=packages/package.xml",
    	"-oresult=dist/packages.xml",	
       	"src/server/xproc/test.xpl"
     ]
