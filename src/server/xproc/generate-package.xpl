@@ -35,7 +35,7 @@
   <p:import href="recursive-directory-list.xpl"/>
 
   <cx:recursive-directory-list name="list">
-    <p:with-option name="path" select="'packages'"/>
+    <p:with-option name="path" select="'/home/travis/build/depify/depify-packages/packages'"/>
   </cx:recursive-directory-list>
 
   <!--p:xslt name="aggregate">
