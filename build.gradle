@@ -7,6 +7,8 @@ buildscript {
 
   dependencies {
     classpath group: 'com.xmlcalabash', name:'xmlcalabash', version:'1.0.13-94'
+    classpath group: 'net.sf.saxon', name:'Saxon-HE', version:'9.5.1-6'
+
   }
 }
 
