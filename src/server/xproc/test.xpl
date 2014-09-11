@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Copyright (c) 2011-2012 James Fuller
+  Copyright (c) 2011-2014 James Fuller
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -26,11 +26,54 @@
     Generates main package bom for entire depx repository.
   </p:documentation>
 
-  <p:input port="source"/>
-  <p:outout port="result"/>
+  <p:output port="result">
+    <p:pipe step="aggregate" port="result"/>
+  </p:output>
+
+  <p:documentation>generate package xml from packages directories</p:documentation>
   
   <p:import href="recursive-directory-list.xpl"/>
 
-  <p:identity/>
+  <cx:recursive-directory-list name="list">
+    <p:with-option name="path" select="'../../../packages'"/>
+  </cx:recursive-directory-list>
+
+  <p:xslt name="aggregate">
+    <p:input port="stylesheet">
+      <p:inline>
+        <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                        xmlns="https://github.com/xquery/depify"
+                        version="2.0">
+          <xsl:output method="xml" encoding="UTF8" omit-xml-declaration="yes" indent="no"/>
+
+          <xsl:template match="/">
+            <depify ts="{current-dateTime()}">
+              <xsl:apply-templates select="//*:directory"/>
+            </depify>
+          </xsl:template>
+
+          <xsl:template match="*:directory">
+              <xsl:apply-templates select="*:file">
+                <xsl:with-param name="base" select="@xml:base"/>
+              </xsl:apply-templates>
+          </xsl:template>
+
+          <xsl:template match="*:file[@name eq 'depify.xml']">
+            <xsl:param name="base"/>
+            <xsl:variable name="package" select="doc(concat($base,'depify.xml'))"/>
+            <xsl:element name="dep">
+              <xsl:attribute name="path" select="concat('/packages/',substring-after($base,'/packages/'))"/>
+              <xsl:copy-of select="$package/*/@*"/>
+              <xsl:copy-of select="$package/*/*"/>
+            </xsl:element>
+          </xsl:template>
+
+        </xsl:stylesheet>
+      </p:inline>
+    </p:input>
+    <p:input port="parameters">
+      <p:empty/>
+    </p:input>   
+  </p:xslt>
 
 </p:declare-step>
