@@ -1,4 +1,4 @@
-defaultTasks 'assemble', 'check', 'copyDocs'
+defaultTasks 'assemble', 'check'
 
 buildscript {
   repositories {
@@ -19,8 +19,8 @@ class CalabashTask extends DefaultTask {
 @TaskAction
   def calabashAction() {
     def args = [
-    	"--debug",
-      "src/server/xproc/test.xpl"
+   	"-oresult=dist/packages.xml",	
+      	"src/server/xproc/test.xpl"
     ]
 
     Main.main(args as String[])
@@ -40,9 +40,7 @@ task clean(type: Delete) {
 task mkdir() {
   outputs.upToDateWhen { false }
 	File distDir = file("dist")
-	File packagesDir = file("dist/packages")
 	distDir.mkdirs()
-  packagesDir.mkdirs()
 }
 
 task assemble(dependsOn: ['mkdir']) {
@@ -52,7 +50,3 @@ task assemble(dependsOn: ['mkdir']) {
 task check(type: CalabashTask){
 }
 
-task copyDocs(type: Copy) {
-  from 'dist/'
-  into 'packages/'
-}
