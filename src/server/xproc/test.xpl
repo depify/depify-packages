@@ -27,7 +27,7 @@
   </p:documentation>
 
   <p:input port="source"/>
-  <p:outout port="result"/>
+  <p:output port="result"/>
   
   <p:import href="recursive-directory-list.xpl"/>
 
