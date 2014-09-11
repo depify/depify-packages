@@ -26,9 +26,9 @@
     Generates main package bom for entire depx repository.
   </p:documentation>
 
-  <p:output port="result">
-    <p:pipe step="aggregate" port="result"/>
-  </p:output>
+  <p:output port="result"/>
+    <!--p:pipe step="aggregate" port="result"/>
+  </p:output-->
 
   <p:documentation>generate package xml from packages directories</p:documentation>
   
@@ -38,7 +38,7 @@
     <p:with-option name="path" select="'../../../packages'"/>
   </cx:recursive-directory-list>
 
-  <p:xslt name="aggregate">
+  <!--p:xslt name="aggregate">
     <p:input port="stylesheet">
       <p:inline>
         <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -74,6 +74,6 @@
     <p:input port="parameters">
       <p:empty/>
     </p:input>   
-  </p:xslt>
+  </p:xslt-->
 
 </p:declare-step>
