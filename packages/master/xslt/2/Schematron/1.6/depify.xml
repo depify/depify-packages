@@ -1,0 +1,38 @@
+<package xmlns="https://github.com/xquery/depify"
+         name="schematron"
+         repo-uri="http://www.schematron.com/tmp/iso-schematron-xslt2.zip"
+         version="1.6">
+  <title>ISO SCHEMATRON 2010</title>
+  <desc>ISO Schematron is a language for making assertion about the presence or absense
+    of patterns in XML documents. It is typically used for as a schema language, or
+    to augment existing schema languages, and to check business rules. It is very
+    powerful, yet quite simple: a developer only need know XPath and about five other
+    elements. 
+    
+    This is an open source implementation of ISO Schematron in XSLT. Although ISO does
+    not allow reference implementations which might compete with the text of the
+    standard, this code has been compiled by Rick Jelliffe, inventor of Schematron
+    and editor of the ISO standard; so developers can certainly use it as an 
+    unofficial reference implementation for clarification. 
+    
+    This implementation is based on one by Oliver Becker. API documentation is 
+    available separately; try www.schematron.com for this. Funding for this
+    stylesheet over the years has come from Topologi Pty. Ltd., Geotempo Ltd.,
+    and ASCC, Tapei.
+    
+    There are two versions of this skeleton: one is tailored for XSLT1 processors
+    and the other is tailored for XSLT2 processors. Future versions of the
+    XSLT2 skeleton may support more features than that the XSLT 1 skeleton. 
+  </desc>
+  <license type="APL-V1.0"/>
+  <license type="zlib/libpng">http://www.opensource.org/licenses/zlib-license.php</license>
+  <author id="">Rick Jelliffe</author>
+  <website>http://www.schematron.com/</website>
+  <repo type="" uri=""></repo>
+  <xslt version="2.0" type="standalone">
+    <uri>iso_schematron_skeleton.xsl</uri>
+    To summarize, a basic 2 step process flow for some commandline processor is like this:
+    I) XSLT -input=xxx.sch  -output=xxx.xsl  -stylesheet=iso_schematron_skeleton.xsl
+    II) XSLT -input=document.xml  -output=xxx-document.results  -stylesheet=xxx.xsl
+  </xslt>
+</package>

@@ -1,0 +1,12 @@
+<package xmlns="https://github.com/xquery/depify"
+         name="xquery.marklogic.oauth2"
+         version="1.0">
+  <title>oauth2</title>
+  <desc>An Oauth2 client implementation example for MarkLogic server.
+This library demonstrates OAuth2 authentication (much simpler than OAuth 1) with
+Facebook and Github. It relies on some conventions for configuring providers 
+and mapping provider users to MarkLogic users.</desc>
+  <license type="?"/>
+  <author id="ndw">Norm Walsh</author>
+  <website>https://github.com/ndw/oauth2</website>
+</package>

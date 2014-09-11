@@ -1,0 +1,14 @@
+<package xmlns="https://github.com/xquery/depify"
+         name="xquery.marklogic.libscribd"
+         version="1.0">
+  <title>libscribd</title>
+  <desc>This module contains all the functions for integrating Scribd with MarkLogic.</desc>
+  <license type="APL-V2.0"/>
+  <author id="ableasdale">Alex Bleasdale</author>
+  <website>https://github.com/xquery/?</website>
+  <xquery vendor="marklogic" version="4.2">
+    <prefix>libscribd</prefix>
+    <ns>http://marklogic.com/ps/lib-scribd</ns>
+    <file>lib-scribd.xqy</file>
+  </xquery>
+</package>

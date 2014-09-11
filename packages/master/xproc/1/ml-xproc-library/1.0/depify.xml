@@ -1,0 +1,30 @@
+<package xmlns="https://github.com/xquery/depify"
+         name="ml-xproc-library"
+         repo-uri="https://github.com/philipfennell/xproc-libraries"
+         version="1.0">
+ <title>ML XProc Libraries</title>
+  <desc xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  XProc libraries for working with MarkLogic.
+  </desc>
+ <license type=""/>
+ <repo type="git">
+   <uri>https://github.com/philipfennell/xproc-libraries</uri>
+ </repo>
+  <author id="philipfennell">Philip Fennell</author>
+  <website>https://github.com/philipfennell/xproc-libraries</website>
+ <xproc vendor="xmlcalabash" version="1.0">
+   <source></source>
+   <result></result>
+   <uri>XprocCorb/pipelines/xproccorb.xpl</uri>
+ </xproc>
+  <xproc vendor="xmlcalabash" version="1.0">
+    <source></source>
+    <result></result>
+    <uri>XprocLoader/pipelines/xprocloader.xpl</uri>
+  </xproc>
+  <xproc vendor="xmlcalabash" version="1.0">
+    <source></source>
+    <result></result>
+    <uri>XprocMLAdmin/build.xpl</uri>
+  </xproc>
+</package>

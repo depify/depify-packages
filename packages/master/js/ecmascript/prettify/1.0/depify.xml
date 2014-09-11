@@ -1,0 +1,26 @@
+<package xmlns="https://github.com/xquery/depify"
+         name="prettify"
+         version="1.0"
+         repo-uri="https://github.com/michaek/google-code-prettify-small.git">
+ <title>Prettify.js library</title>
+  <desc>A Javascript module and CSS file that allows syntax highlighting of source code snippets in an html page. </desc>
+ <license type="APLV2">
+   <uri>http://google-code-prettify.googlecode.com/svn/trunk/COPYING</uri>
+ </license>
+ <repo type="git">
+     <uri>https://github.com/michaek/google-code-prettify-small</uri>
+ </repo>
+ <author id="">Mike Samuel</author>
+ <website>http://code.google.com/p/google-code-prettify/</website>
+ <js required="true">
+   <uri>prettify.js</uri>
+ </js>
+  <js required="true">    
+   <uri>lang-xq.js</uri>
+  </js>
+  <css required="true">
+   <type>text/css</type> 
+   <rel>stylesheet</rel>
+   <uri>prettify.css</uri>
+ </css>
+</package>

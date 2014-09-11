@@ -1,0 +1,17 @@
+<package xmlns="https://github.com/xquery/depify" name="xqueryparserxq" version="1.0" repo-uri="https://github.com/jpcs/xqueryparser.xq.git">
+   <title>xqueryparser.xq</title>
+   <desc>An parser for XQuery 3.0 and MarkLogic extensions.</desc>
+   <license type="APLV2.0">
+      <uri>https://github.com/jpcs/xqueryparser.xq/blob/master/LICENSE</uri>
+   </license>
+   <repo type="git">
+      <uri>https://github.com/jpcs/xqueryparser.xq.git</uri>
+   </repo>
+   <author id="jpcs">John Snelson</author>
+   <website>https://github.com/jpcs/xqueryparser.xq</website>
+   <xquery version="3.0">
+      <prefix>xqp</prefix>
+      <namespace>http://github.com/jpcs/xqueryparser.xq</namespace>
+      <uri>xqueryparser.xq</uri>
+   </xquery>
+</package>
