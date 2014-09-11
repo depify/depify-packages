@@ -35,10 +35,10 @@
   <p:import href="recursive-directory-list.xpl"/>
 
   <cx:recursive-directory-list name="list">
-    <p:with-option name="path" select="'../../../packages'"/>
+    <p:with-option name="path" select="'packages'"/>
   </cx:recursive-directory-list>
 
-  <p:xslt name="aggregate">
+  <!--p:xslt name="aggregate">
     <p:input port="stylesheet">
       <p:inline>
         <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -74,16 +74,7 @@
     <p:input port="parameters">
       <p:empty/>
     </p:input>   
-  </p:xslt>
-
-  <!-- run pipeline manually in emacs with m-x compile //-->
-  <p:documentation>
-    (:
-    -- Local Variables:
-    -- compile-command: "/usr/local/bin/calabash  -oresult=../../../packages/package.xml generate-package.xpl "
-    -- End:
-    :)
-  </p:documentation>
+  </p:xslt-->
 
 
 </p:declare-step>
