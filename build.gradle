@@ -1,0 +1,58 @@
+defaultTasks 'assemble', 'check', 'copyDocs'
+
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+
+  dependencies {
+    classpath group: 'com.xmlcalabash', name:'xmlcalabash', version:'1.0.13-94'
+  }
+}
+
+import org.gradle.api.DefaultTask
+import org.gradle.api.tasks.TaskAction
+import com.xmlcalabash.drivers.Main
+
+class CalabashTask extends DefaultTask {
+
+@TaskAction
+  def calabashAction() {
+    def args = [
+      "-oresult=../packages/package.xml",
+      "../src/server/xproc/generate-package.xpl"
+    ]
+
+    Main.main(args as String[])
+  }
+}
+
+println '-----------------------------'
+println 'build depify packages'
+println '-----------------------------'
+
+task clean(type: Delete) {
+  outputs.upToDateWhen { false }
+  outputs.upToDateWhen { false }
+  delete 'dist'
+}
+
+task mkdir() {
+  outputs.upToDateWhen { false }
+	File distDir = file("dist")
+	File packagesDir = file("dist/packages")
+	distDir.mkdirs()
+  packagesDir.mkdirs()
+}
+
+task assemble(dependsOn: ['mkdir']) {
+    outputs.upToDateWhen { false }
+}
+
+task check(type: CalabashTask){
+}
+
+task copyDocs(type: Copy) {
+  from 'dist/'
+  into 'packages/'
+}
