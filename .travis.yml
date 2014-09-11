@@ -1,5 +1,1 @@
 language: java
-script: gradle
-env:
-  global:
-  - secure: asdfadsfdsafsadfsdaf
