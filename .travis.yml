@@ -3,6 +3,6 @@ language: java
 env:
   global:
   - secure: 32mWStMv+1Db9SZgX+VIhm8PeDGTFZPBwIBhHDgPBIcBuCnseES+lPfiqU8ZgjNhWlHa/GH2xnRKFYlSL+N66PvtNDYyT8yG7Palxjlv1IM/PIYvyk28Y1cOm9c4CN4zu81oAj7mFi133HDVvaybYmHEd2woHrF68fiUqobdAIto/w=
-
+  
 after_success:
 - .travis/publish-packages.sh
