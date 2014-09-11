@@ -1,4 +1,4 @@
-<depify xmlns="https://github.com/xquery/depify" ts="2014-05-04T21:36:59.484+02:00"><dep path="/packages/master/js/ecmascript/prettify/1.0/" name="prettify" version="1.0" repo-uri="https://github.com/michaek/google-code-prettify-small.git"><title>Prettify.js library</title><desc>A Javascript module and CSS file that allows syntax highlighting of source code snippets in an html page. </desc><license type="APLV2">
+<depify xmlns="https://github.com/xquery/depify" ts="2014-09-11T13:56:48.103+02:00"><dep path="/packages/master/js/ecmascript/prettify/1.0/" name="prettify" version="1.0" repo-uri="https://github.com/michaek/google-code-prettify-small.git"><title>Prettify.js library</title><desc>A Javascript module and CSS file that allows syntax highlighting of source code snippets in an html page. </desc><license type="APLV2">
    <uri>http://google-code-prettify.googlecode.com/svn/trunk/COPYING</uri>
  </license><repo type="git">
      <uri>https://github.com/michaek/google-code-prettify-small</uri>
