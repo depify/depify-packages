@@ -9,8 +9,8 @@ set | grep TRAVIS
     cp -R dist $HOME/packages
 
     cd $HOME
-    git config --global user.email ${GIT_EMAIL}
-    git config --global user.name ${GIT_NAME}
+    git config --global user.email "jim.fuller@webcomposite.com"
+    git config --global user.name "depify"
     git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/depify/depify-website gh-pages > /dev/null
 
     if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
