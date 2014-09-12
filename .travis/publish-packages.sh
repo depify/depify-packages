@@ -18,6 +18,8 @@ GH_USER="depify"
 GH_REPO="depify-websites"
 FOLDER="packages" # This is where the API documentation files reside after build
 
+cp -R dist/packages.xml $HOME/packages/packages.xml
+
 # CONDITIONS
 
 # Only publish when running tests for PHP 5.5, when committing to master and
