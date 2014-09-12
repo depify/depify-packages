@@ -22,6 +22,7 @@ class CalabashTask extends DefaultTask {
   def calabashAction() {
     def args = [
     	"--debug",
+    	"-oresult=dist/packages.xml",
       	"src/xproc/generate-package.xpl"
     ]
 
