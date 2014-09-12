@@ -22,11 +22,9 @@ FOLDER="packages" # This is where the API documentation files reside after build
 
 # Only publish when running tests for PHP 5.5, when committing to master and
 # when not building a pull request
-if [ "$TRAVIS_BRANCH" != "master" ] \
-|| [ "$TRAVIS_PHP_VERSION" != "5.5" ] \
-|| [ "$TRAVIS_PULL_REQUEST" != "false" ]
+if  [ "$TRAVIS_PULL_REQUEST" != "true" ]
 then
-  echo "Not updating gh-pages for this build"
+  echo "Not updating gh-pages for pull request"
   exit 0
 fi
 
