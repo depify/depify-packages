@@ -46,7 +46,7 @@ git config --global user.name "Travis"
 # Redirecting output to /dev/null to avoid leaking unencrypted GH_TOKEN
 git clone --quiet \
           --branch=gh-pages \
-          https://${GH_TOKEN}@github.com/${GH_USER}/${GH_REPO}.git  \
+          https://depify@github.com/depify/depify-website.git  \
           gh-pages > /dev/null
 
 # Copy data we are insterested in to the gh-pages directory
