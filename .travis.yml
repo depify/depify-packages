@@ -2,7 +2,7 @@ language: java
 
 env:
   global:
-  - secure: "kK5Oh473LtY4QSsnNqyH+nwkAplEVUrU+TBwmIgHlURPbzvllC0V8/f10mILNlZvGzWCXN0N4YlnLs7qNDbcyup8MKdGMX6d8ioGDHjO0/3d9cuuCOoD2v1WWO/Vcbn4JML82DHJgYnh71qVbSHNPM3Oj360tVe529uTluawmPY="
-  
+    -secure: NWlduWdSL7oOIsRFJMDvfdbO5u11d9nZwE+9VI30bZZTyp/zJxePokzAE7z41OY0q2nt+gjq4D1sq02JHIAPOu7GXhD3EnaF1kmFIeDI62Bvw/Bc6KnREPZ+rbPB/IBCNHUcoDK3O5nd2L2/LI7+qe6thl7LBXsVWQ0BoXEP2UY=
+
 after_success:
-- .travis/publish-packages.sh
+  - .travis/publish-packages.sh
