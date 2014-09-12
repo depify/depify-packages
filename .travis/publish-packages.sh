@@ -2,6 +2,11 @@
 
 set | grep TRAVIS
 
+echo -e "$TRAVIS_REPO_SLUG starting publishing ...\n"
+
+if [ "$TRAVIS_REPO_SLUG" == "$GIT_PUB_REPO" ]; then
+    echo -e "Setting up for publication...\n"
+    
     echo -e "Setting up for publishing depify packages.xml ...\n"
 
     cp -R dist $HOME/packages
@@ -12,7 +17,7 @@ set | grep TRAVIS
     git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/depify/depify-website gh-pages > /dev/null
 
     if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
-        echo -e "Publishing depify package.xml...\n"
+        echo -e "Publishing depify packages.xml...\n"
 
         TIP=${TRAVIS_TAG:="head"}
 
@@ -25,7 +30,8 @@ set | grep TRAVIS
         git commit -m "Successful travis build $TRAVIS_BUILD_NUMBER"
         git push -fq origin gh-pages > /dev/null
 
-        echo -e "Published depify package.xml to gh-pages.\n"
+        echo -e "Published depify packages.xml to gh-pages.\n"
     else
         echo -e "Publication cannot be performed on pull requests.\n"
     fi
+fi
