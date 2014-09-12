@@ -1,34 +1,27 @@
 #!/bin/bash
 
-set | grep TRAVIS
-set | grep GIT_
-set | grep GH_
+if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+  echo -e "Starting to update gh-pages\n"
 
-    echo -e "Setting up for publication...\n"
+  #copy data we're interested in to other place
+  cp -R dist/packages.xml $HOME/packages/packages.xml
 
-    cp -R dist/packages.xml  $HOME/packages.xml
+  #go to home and setup git
+  cd $HOME
+  git config --global user.email "travis@travis-ci.org"
+  git config --global user.name "Travis"
 
-    cd $HOME
-    git config --global user.email ${GIT_EMAIL}
-    git config --global user.name ${GIT_NAME}
-    git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/depify/depify-websites gh-pages > /dev/null
+  #using token clone gh-pages branch
+  git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/depify/depify-website.git  gh-pages > /dev/null
 
-    if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
-        echo -e "Publishing specification...\n"
+  #go into diractory and copy data we're interested in to that directory
+  cd gh-pages
+  cp -Rf $HOME/packages/* packages/.
 
-        TIP=${TRAVIS_TAG:="head"}
+  #add, commit and push files
+  git add -f .
+  git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to gh-pages"
+  git push -fq origin gh-pages > /dev/null
 
-        cd gh-pages
-        git rm -rf ./packages/${TRAVIS_BRANCH}/${TIP}
-        mkdir -p ./packages/${TRAVIS_BRANCH}/${TIP}
-        cp -Rf $HOME/packages/* ./packages/${TRAVIS_BRANCH}/${TIP}
-
-        git add -f .
-        git commit -m "Successful travis build $TRAVIS_BUILD_NUMBER"
-        git push -fq origin gh-pages > /dev/null
-
-        echo -e "Published specification to gh-pages.\n"
-    else
-        echo -e "Publication cannot be performed on pull requests.\n"
-    fi
-
+  echo -e "Done magic with coverage\n"
+fi
