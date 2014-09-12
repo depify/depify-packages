@@ -2,8 +2,6 @@
 
 set | grep TRAVIS
 
-echo -e "$TRAVIS_REPO_SLUG starting publishing ...\n"
-
 if [ "$TRAVIS_REPO_SLUG" == "$GIT_PUB_REPO" ]; then
     echo -e "Setting up for publication...\n"
     
