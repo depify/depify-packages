@@ -4,7 +4,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   echo -e "Starting to update gh-pages\n"
 
   #copy data we're interested in to other place
-  cp -R dist $HOME/.
+  cp -R dist/packages.xml $HOME/packages.xml
 
   #go to home and setup git
   cd $HOME
@@ -16,10 +16,10 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 
   #go into diractory and copy data we're interested in to that directory
   cd gh-pages
-  cp -Rf $HOME/dist/* ./packages/*
+  cp -Rf $HOME/packages.xml ./packages/packages.xml
 
   #add, commit and push files
-  git add -f ./packages/*
+  git add -f ./packages/packages.xml
   git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to gh-pages"
   git push -fq origin gh-pages > /dev/null
 
