@@ -11,7 +11,7 @@ set | grep GH_
     cd $HOME
     git config --global user.email ${GIT_EMAIL}
     git config --global user.name ${GIT_NAME}
-    git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/${GIT_PUB_REPO} gh-pages > /dev/null
+    git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/depify/depify-websites gh-pages > /dev/null
 
     if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
         echo -e "Publishing specification...\n"
