@@ -1,7 +1,7 @@
 depify-packages
 ===============
 
-![status](https://travis-ci.org/depify/depify-packages.svg?branch=master)
+[![Build Status](https://travis-ci.org/depify/depify-packages.svg?branch=master)](https://travis-ci.org/depify/depify-packages)
 
 # Adding your own Packages
 
