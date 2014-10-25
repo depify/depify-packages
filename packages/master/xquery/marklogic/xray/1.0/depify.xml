@@ -1,6 +1,6 @@
 <package xmlns="https://github.com/xquery/depify"
          name="xray"
-         repo-uri="https://github.com/robwhitby/xray"
+         repo-uri="https://github.com/robwhitby/xray.git"
          version="1.0">
   <title>xray</title>
   <desc>xray is a framework for writing XQuery unit tests on MarkLogic
