@@ -1,4 +1,7 @@
-<package xmlns="https://github.com/xquery/depify" name="xqueryparserxq" version="1.0" repo-uri="https://github.com/jpcs/xqueryparser.xq.git">
+<package xmlns="https://github.com/xquery/depify"
+         name="xqueryparser.xq"
+         version="1.0"
+         repo-uri="https://github.com/jpcs/xqueryparser.xq.git">
    <title>xqueryparser.xq</title>
    <desc>An parser for XQuery 3.0 and MarkLogic extensions.</desc>
    <license type="APLV2.0">
