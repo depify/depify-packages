@@ -1,0 +1,5 @@
+<package xmlns="https://github.com/xquery/depify"
+         name="rxq1"
+         repo-uri="https://github.com/xquery/rxq.git"
+         version="1.0">
+</package>
