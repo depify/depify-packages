@@ -1,0 +1,12 @@
+<package xmlns="https://github.com/xquery/depify"
+         name="data.xq"
+         version="1.0"
+         repo-uri="https://github.com/jpcs/data.xq.git">
+   <title>xqueryparser.xq</title>
+   <desc>An XQuery 3.0 library for defining algebraic data types, and performing structural pattern matching on them..</desc>
+   <license type="APLV2.0">
+      <uri>https://github.com/jpcs/data.xq/blob/master/LICENSE</uri>
+   </license>
+   <author id="jpcs">John Snelson</author>
+   <website>https://github.com/jpcs/data.xq</website>
+</package>
