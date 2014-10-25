@@ -17,9 +17,11 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   #go into diractory and copy data we're interested in to that directory
   cd gh-pages
   cp -Rf $HOME/packages.xml ./packages/packages.xml
+  cp -Rf $HOME/packages.xml ./packages/package.xml
 
   #add, commit and push files
   git add -f ./packages/packages.xml
+  git add -f ./packages/package.xml
   git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to gh-pages"
   git push -fq origin gh-pages > /dev/null
 
