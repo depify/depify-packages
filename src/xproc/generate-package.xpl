@@ -18,6 +18,7 @@
     xmlns:c="http://www.w3.org/ns/xproc-step"
     xmlns:p="http://www.w3.org/ns/xproc"
     xmlns:cx="http://xmlcalabash.com/ns/extensions"
+    xmlns:depify="https://github.com/depify"
     name="generate-package"
     version="1.0"
     exclude-inline-prefixes="cx c p">
@@ -46,6 +47,7 @@
     <p:load name="file">
       <p:with-option name="href" select="$file"/>
     </p:load>
+    
     <cx:message>
       <p:with-option name="message" select="$file"/>
     </cx:message>
@@ -55,11 +57,12 @@
         <p:document href="../../etc/depify.rng"/>
       </p:input>
     </p:validate-with-relax-ng>
- 
-  </p:for-each>
-  <p:wrap-sequence wrapper="packages" wrapper-namespace="https://github.com/depify"/>
+    <p:add-attribute attribute-name="path" match="/depify:depify">
+      <p:with-option name="attribute-value" select="substring-after($file,'depify-packages')"/>
+    </p:add-attribute>
 
-  <p:identity name="aggregate"/>
+  </p:for-each>
+  <p:wrap-sequence name="aggregate" wrapper="packages" wrapper-namespace="https://github.com/depify"/>
     
   <!--p:xslt name="aggregate">
     <p:input port="stylesheet">
