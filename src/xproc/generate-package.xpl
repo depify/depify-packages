@@ -38,7 +38,6 @@
     <p:with-option name="path" select="'../../packages'"/>
   </cx:recursive-directory-list>
 
-
   <p:for-each name="loop">
     <p:output port="result" sequence="true"/>
     <p:iteration-source select="//c:file[ends-with(@name,'.depify.xml')]"/>
