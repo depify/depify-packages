@@ -51,7 +51,7 @@
     <p:load name="file">
       <p:with-option name="href" select="$file"/>
     </p:load>
-  </for-each>
+  </p:for-each>
   <p:wrap-sequence wrapper="packages" wrapper-namespace="https://github.com/depify"/>
 
     
