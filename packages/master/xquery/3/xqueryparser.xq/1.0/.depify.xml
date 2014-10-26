@@ -1,4 +1,4 @@
-<package xmlns="https://github.com/xquery/depify"
+<depify xmlns="https://github.com/depify"
          name="xqueryparser.xq"
          version="1.0"
          repo-uri="https://github.com/jpcs/xqueryparser.xq.git">
@@ -17,4 +17,4 @@
       <namespace>http://github.com/jpcs/xqueryparser.xq</namespace>
       <uri>xqueryparser.xq</uri>
    </xquery>
-</package>
+</depify>

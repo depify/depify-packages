@@ -1,4 +1,4 @@
-<package xmlns="https://github.com/xquery/depify"
+<depify xmlns="https://github.com/depify"
          name="prettify"
          version="1.0"
          repo-uri="https://github.com/michaek/google-code-prettify-small.git">
@@ -23,4 +23,4 @@
    <rel>stylesheet</rel>
    <uri>prettify.css</uri>
  </css>
-</package>
+</depify>

@@ -1,4 +1,4 @@
-<package xmlns="https://github.com/xquery/depify"
+<depify xmlns="https://github.com/depify"
          name="rbtree.xq"
          version="1.0"
          repo-uri="https://github.com/jpcs/rbtree.xq.git">
@@ -22,5 +22,5 @@
     <namespace>http://snelson.org.uk/functions/map</namespace>
     <uri>map.xq</uri>
   </xquery>
-</package>
+</depify>
 

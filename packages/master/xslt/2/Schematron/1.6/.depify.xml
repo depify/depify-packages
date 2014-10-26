@@ -1,4 +1,4 @@
-<package xmlns="https://github.com/xquery/depify"
+<depify xmlns="https://github.com/depify"
          name="schematron"
          repo-uri="http://www.schematron.com/tmp/iso-schematron-xslt2.zip"
          version="1.6">
@@ -35,4 +35,4 @@
     I) XSLT -input=xxx.sch  -output=xxx.xsl  -stylesheet=iso_schematron_skeleton.xsl
     II) XSLT -input=document.xml  -output=xxx-document.results  -stylesheet=xxx.xsl
   </xslt>
-</package>
+</depify>

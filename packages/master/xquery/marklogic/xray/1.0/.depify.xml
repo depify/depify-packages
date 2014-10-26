@@ -1,4 +1,4 @@
-<package xmlns="https://github.com/xquery/depify"
+<depify xmlns="https://github.com/depify"
          name="xray"
          repo-uri="https://github.com/robwhitby/xray.git"
          version="1.0">
@@ -17,4 +17,4 @@
   <shell os="linux osx">
     <uri>test-runner.sh</uri>
   </shell>
-</package>
+</depify>

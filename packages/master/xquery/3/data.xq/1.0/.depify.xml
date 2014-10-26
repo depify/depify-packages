@@ -1,4 +1,4 @@
-<package xmlns="https://github.com/xquery/depify"
+<depify xmlns="https://github.com/depify"
          name="data.xq"
          version="1.0"
          repo-uri="https://github.com/jpcs/data.xq.git">
@@ -9,4 +9,4 @@
    </license>
    <author id="jpcs">John Snelson</author>
    <website>https://github.com/jpcs/data.xq</website>
-</package>
+</depify>

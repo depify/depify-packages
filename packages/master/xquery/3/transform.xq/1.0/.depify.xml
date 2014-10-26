@@ -1,4 +1,4 @@
-<package xmlns="https://github.com/xquery/depify"
+<depify xmlns="https://github.com/depify"
          name="transform.xq"
          version="1.0"
          repo-uri="https://github.com/jpcs/transform.xq.git">
@@ -17,4 +17,4 @@
       <namespace>http://snelson.org.uk/functions/transform</namespace>
       <uri>transform.xq</uri>
    </xquery>
-</package>
+</depify>

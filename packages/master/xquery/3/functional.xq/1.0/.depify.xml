@@ -1,4 +1,4 @@
-<package xmlns="https://github.com/xquery/depify"
+<depify xmlns="https://github.com/depify"
          name="functional.xq"
          version="1.0"
          repo-uri="git://github.com/jpcs/functional.xq.git">
@@ -19,4 +19,4 @@
     <namespace>http://snelson.org.uk/functions/functional</namespace>
     <uri>functional.xq</uri>
   </xquery>
-</package>
+</depify>

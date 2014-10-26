@@ -38,7 +38,24 @@
     <p:with-option name="path" select="'../../packages'"/>
   </cx:recursive-directory-list>
 
-  <p:xslt name="aggregate">
+
+  <p:for-each name="loop">
+    <p:output port="result" sequence="true"/>
+    <p:iteration-source select="//c:file[ends-with(@name,'.depify.xml')]"/>
+    <p:variable name="file" select="/c:file/@name"/>
+    <p:validate-with-relaxng assert-valid="true">
+      <p:input port="schema">
+        <p:document href="relaxngschema.rng"/>
+      </p:input>
+    </p:validate-with-relaxng>
+    <p:load name="file">
+      <p:with-option name="href" select="$file"/>
+    </p:load>
+  </for-each>
+  <p:wrap-sequence wrapper="packages" wrapper-namespace="https://github.com/depify"/>
+
+    
+  <!--p:xslt name="aggregate">
     <p:input port="stylesheet">
       <p:inline>
         <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -73,7 +90,7 @@
     <p:input port="parameters">
       <p:empty/>
     </p:input>   
-  </p:xslt>
+  </p:xslt-->
 
 
 </p:declare-step>

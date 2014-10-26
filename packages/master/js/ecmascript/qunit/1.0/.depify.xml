@@ -1,4 +1,4 @@
-<package xmlns="https://github.com/xquery/depify" name="qunit" version="1.0" repo-uri="https://github.com/jquery/qunit.git">
+<depify xmlns="https://github.com/depify" name="qunit" version="1.0" repo-uri="https://github.com/jquery/qunit.git">
   <title>QUnit - A JavaScript Unit Testing Framework</title>
   <desc>A JavaScript Unit Testing Framework</desc>
   <license type="GPL/MIT">
@@ -24,4 +24,4 @@
     <rel>stylesheet</rel>
     <uri>css/qunit.css</uri>
   </css>
-</package>
+</depify>

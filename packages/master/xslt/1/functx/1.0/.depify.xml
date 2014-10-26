@@ -1,4 +1,4 @@
-<package xmlns="https://github.com/xquery/depify"
+<depify xmlns="https://github.com/depify"
          name="xslt.1.functx"
          version="1.0">
  <title>FunctX library</title>
@@ -28,4 +28,4 @@
    <namespace>http://www.functx.com</namespace>
    <uri>functx.xsl</uri>
  </xslt>
-</package>
+</depify>

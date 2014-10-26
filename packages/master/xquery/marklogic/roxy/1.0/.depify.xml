@@ -1,4 +1,4 @@
-<depify xmlns="https://github.com/xquery/depify"
+<depify xmlns="https://github.com/depify"
          name="roxy"
          repo-uri="https://github.com/marklogic/roxy.git"
          version="1.0">
