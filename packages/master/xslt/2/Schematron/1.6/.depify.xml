@@ -28,11 +28,7 @@
   <license type="zlib/libpng">http://www.opensource.org/licenses/zlib-license.php</license>
   <author id="">Rick Jelliffe</author>
   <website>http://www.schematron.com/</website>
-  <repo type="" uri=""></repo>
-  <xslt version="2.0" type="standalone">
+  <xslt version="2.0">
     <uri>iso_schematron_skeleton.xsl</uri>
-    To summarize, a basic 2 step process flow for some commandline processor is like this:
-    I) XSLT -input=xxx.sch  -output=xxx.xsl  -stylesheet=iso_schematron_skeleton.xsl
-    II) XSLT -input=document.xml  -output=xxx-document.results  -stylesheet=xxx.xsl
   </xslt>
 </depify>

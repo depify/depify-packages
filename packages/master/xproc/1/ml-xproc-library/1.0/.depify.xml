@@ -7,9 +7,6 @@
   XProc libraries for working with MarkLogic.
   </desc>
  <license type=""/>
- <repo type="git">
-   <uri>https://github.com/philipfennell/xproc-libraries</uri>
- </repo>
   <author id="philipfennell">Philip Fennell</author>
   <website>https://github.com/philipfennell/xproc-libraries</website>
  <xproc vendor="xmlcalabash" version="1.0">

@@ -7,9 +7,6 @@
    <license type="APLV2.0">
       <uri>https://github.com/jpcs/transform.xq/blob/master/LICENSE</uri>
    </license>
-   <repo type="git">
-      <uri>https://github.com/jpcs/transform.xq.git</uri>
-   </repo>
    <author id="jpcs">John Snelson</author>
    <website>https://github.com/jpcs/transform.xq/</website>
    <xquery version="3.0">

@@ -9,9 +9,6 @@
   <license type="APLV2">
     <uri>https://github.com/jpcs/functional.xq/blob/master/LICENSE</uri>
   </license>
-  <repo type="git">
-    <uri>git://github.com/jpcs/functional.xq.git</uri>
-  </repo>
   <author id="jpcs">John Snelson</author>
   <website>https://github.com/jpcs/functional.xq/</website>
   <xquery version="3.0">

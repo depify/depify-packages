@@ -3,10 +3,10 @@
          version="1.0"
          repo-uri="https://github.com/ndw/xslt-relax-ng.git">
  <title>RelaxNG schemas for XSLT 1 &amp; XSLT 2</title>
-  <desc xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    <xhtml:p>This project provides RELAX NG grammars for XSLT stylesheets. Because stylesheets are required to have a version number, it's straightforward for a RELAX NG validator to choose between the xslt10.rnc and xslt20.rnc grammars.</xhtml:p>
-    <xhtml:p>As work on XSLT 3.0 stabilizes, I plan to include support for that as well.</xhtml:p>
-    <xhtml:p>Having a RELAX NG grammar makes syntax directed editing of XSLT stylesheets much easier in tools like Emacs and oXygen that support RELAX NG.</xhtml:p> 
+  <desc>
+    This project provides RELAX NG grammars for XSLT stylesheets. Because stylesheets are required to have a version number, it's straightforward for a RELAX NG validator to choose between the xslt10.rnc and xslt20.rnc grammars.
+    As work on XSLT 3.0 stabilizes, I plan to include support for that as well.
+    Having a RELAX NG grammar makes syntax directed editing of XSLT stylesheets much easier in tools like Emacs and oXygen that support RELAX NG. 
   </desc>
  <license type="MPL2"/>
  <author id="ndw">Norm Walsh</author>

@@ -6,10 +6,9 @@ buildscript {
   }
 
   dependencies {
-    classpath group: 'com.xmlcalabash', name:'xmlcalabash', version:'1.0.13-94'
+    classpath 'com.thaiopensource:jing:20091111'
     classpath group: 'net.sf.saxon', name:'Saxon-HE', version:'9.5.1-6'
-    classpath group: 'com.thaiopensource','jing', version:'20091111'
-    classpath group: 'isorelax','isorelax', version:'20030108'
+    classpath group: 'com.xmlcalabash', name:'xmlcalabash', version:'1.0.13-94'
   }
 }
 
@@ -55,3 +54,6 @@ task assemble(dependsOn: ['mkdir']) {
 task check(type: CalabashTask){
 }
 
+task showMeCache << {
+  configurations.compile.each { println it }
+}

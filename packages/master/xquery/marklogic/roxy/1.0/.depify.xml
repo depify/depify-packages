@@ -11,8 +11,4 @@
   <author id="paxtonhare">Paxton Hare</author>
   <author id="dmcassel">Dan Cassel</author>
   <website>https://github.com/marklogic/roxy</website>
-  <scm>
-    <uri>https://github.com/marklogic/roxy.git</uri>
-  </scm>
-  <app/>
 </depify>

@@ -6,9 +6,6 @@
    <license type="APLV2">
       <uri>NOTICE</uri>
    </license>
-   <repo type="svn">
-      <uri>https://mxquery.svn.sourceforge.net/svnroot/mxquery/trunk/MXQuery/</uri>
-   </repo>
    <author id="">FLWOR Foundation, ETH Zurich Systems Group and Oracle</author>
    <website>http://www.xqib.org/?page_id=2</website>
    <js>

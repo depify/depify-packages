@@ -8,13 +8,4 @@
   <license type="?"/>
   <author id="rwhitby">Rob Whitby</author>
   <website>https://github.com/robwhitby/xray</website>
-  <scm>
-    <uri>https://github.com/robwhitby/xray.git</uri>
-  </scm>
-  <app>
-    <uri>index.xqy</uri>
-  </app>
-  <shell os="linux osx">
-    <uri>test-runner.sh</uri>
-  </shell>
 </depify>

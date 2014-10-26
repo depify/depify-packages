@@ -1,6 +1,7 @@
 <depify xmlns="https://github.com/depify"
          name="xquery.1.functx"
-         version="1.0">
+         version="1.0"
+         repo-uri="">
  <title>FunctX library</title>
  <desc>The FunctX function library is a set of useful functions on
   XML documents and data. It comes in two flavors: XQuery 1.0 and
@@ -18,9 +19,6 @@
  <license type="GNU-LGPL">
    <uri>?</uri>
  </license>
- <repo type="?">
-   <uri>?</uri>
- </repo>
  <author id="pwalmsley">Priscilla Walmsley</author>
  <website>http://www.xqueryfunctions.com/</website>
  <xquery version="1.0">

@@ -23,7 +23,7 @@
     exclude-inline-prefixes="cx c p">
 
   <p:documentation>
-    Generates main package bom for entire depx repository.
+    Generates main package bom for entire depify repository.
   </p:documentation>
 
   <p:output port="result">
@@ -31,7 +31,8 @@
   </p:output>
 
   <p:documentation>generate package xml from packages directories</p:documentation>
-  
+
+  <p:import href="extension-library.xml"/>  
   <p:import href="recursive-directory-list.xpl"/>
 
   <cx:recursive-directory-list name="list">
@@ -41,18 +42,24 @@
   <p:for-each name="loop">
     <p:output port="result" sequence="true"/>
     <p:iteration-source select="//c:file[ends-with(@name,'.depify.xml')]"/>
-    <p:variable name="file" select="/c:file/@name"/>
-    <p:validate-with-relaxng assert-valid="true">
-      <p:input port="schema">
-        <p:document href="relaxngschema.rng"/>
-      </p:input>
-    </p:validate-with-relaxng>
+    <p:variable name="file" select="concat(base-uri(c:file),/c:file/@name)"/>
     <p:load name="file">
       <p:with-option name="href" select="$file"/>
     </p:load>
+    <cx:message>
+      <p:with-option name="message" select="$file"/>
+    </cx:message>
+
+     <p:validate-with-relax-ng assert-valid="true">
+      <p:input port="schema">
+        <p:document href="../../etc/depify.rng"/>
+      </p:input>
+    </p:validate-with-relax-ng>
+ 
   </p:for-each>
   <p:wrap-sequence wrapper="packages" wrapper-namespace="https://github.com/depify"/>
 
+  <p:identity name="aggregate"/>
     
   <!--p:xslt name="aggregate">
     <p:input port="stylesheet">

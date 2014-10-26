@@ -1,61 +1,145 @@
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:depx="https://github.com/depify">
-    <ns uri="https://github.com/depify" prefix="depify"/>
-    <pattern id="basic">
-        <rule context="/depify:depify">
-            <assert test="@name">Requires a fully qualified name for package.</assert>
-            <assert test="@version">Requires version number for package.</assert>
-            <assert test="@repo-uri">Requires repo for package.</assert>           
-        </rule>
-    </pattern>    
-    <pattern id="entrypoint">
-        <rule context="/depify:depify">
-            <assert test="depify:xquery or depify:xslt or depify:schema or depify:xproc or depify:css or depify:js or depify:app">Requires at least one entry point</assert>
-        </rule>
-        <rule context="/depify:depify/depify:xquery">
-            <assert test="depify:prefix ne ''">XQuery entrypoint requires namespace prefix</assert>
-            <assert test="depify:namespace ne ''">XQuery entrypoint requires valid namespace</assert>
-            <assert test="depify:uri ne ''">XQuery entrypoint requires valid uri</assert>
-        </rule>
-        <rule context="/depify:depify/depify:xslt">
-            <assert test="depify:prefix ne ''">XSLT entrypoint requires namespace prefix</assert>
-            <assert test="depify:namespace ne ''">XSLT entrypoint requires valid namespace</assert>
-            <assert test="depify:uri ne ''">XSLT entrypoint requires valid uri</assert>
-        </rule>
-        <rule context="/depify:depify/depify:xproc">
-            <assert test="depify:prefix ne ''">XPROC entrypoint requires namespace prefix</assert>
-            <assert test="depify:namespace ne ''">XPROC entrypoint requires valid namespace</assert>
-            <assert test="depify:uri ne ''">XPROC entrypoint requires valid uri</assert>
-        </rule>
-        <rule context="/depify:depify/depify:schema">
-            <assert test="@type eq 'xmlschema' or @type eq 'schematron' or @type eq 'relaxng' or @type eq 'nvdl'">Schema entrypoint requires a type</assert>
-            <assert test="depify:prefix">Schema entrypoint requires namespace prefix</assert>
-            <assert test="depify:namespace">Schema entrypoint requires valid namespace</assert>
-            <assert test="depify:uri">Schema entrypoint requires valid uri</assert>
-        </rule>
-        <rule context="/depify:depify/depify:css">
-            <assert test="depify:uri ne ''">CSS entrypoint requires valid uri</assert>
-        </rule>
-        <rule context="/depify:depify/depify:js">
-            <assert test="depify:uri ne ''">JS entrypoint requires valid uri</assert>
-        </rule>
-        <rule context="/depify:depify/depify:app">
-            <assert test="depify:uri ne ''">APP entrypoint requires valid uri</assert>
-        </rule>
-    </pattern>
-    <pattern id="deps">
-        <rule context="/depify:depify/depify:dep">
-            <assert test="@name ne ''">Dependency requires fully qualified name ex. xquery.1.functx</assert>
-            <assert test="matches(@version,'^(\d*)(\.?)(\d*)(\.?)(\d*)$')">Dependency requires valid version ex. 1.0.0 </assert>
-            <assert test="@version ne ''">Dependency requires non-empty version</assert>
-        </rule>
-    </pattern>
-    <pattern id="optional">
-        <rule context="/depify:depify">
-            <assert test="depify:title">Title will be used for depx.org listing.</assert>
-            <assert test="depify:desc">Description will be used for depx.org listing.</assert>
-            <assert test="depify:license">Description will be used for depx.org listing.</assert>
-            <assert test="depify:author" >Author will be used for depx.org listing.</assert>
-            <assert test="depify:website">Website will be used for depx.org listing.</assert>
-        </rule>
-    </pattern>    
-</schema>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" ns="https://github.com/depify">
+    <start>
+        <ref name="depify"/>
+    </start>
+    <define name="depify">
+        <element name="depify">
+            <attribute name="name"/>
+            <attribute name="version"/>
+            <attribute name="repo-uri"/>
+            <interleave>
+                <optional>
+                    <element name="title">
+                        <ref name="resource"/>
+                    </element>
+                </optional>
+                <optional>
+                    <element name="desc">
+                        <ref name="resource"/>
+                    </element>
+                </optional>
+                <optional>
+                    <oneOrMore>
+                        <element name="license">
+                            <attribute name="type"/>
+                            <ref name="resource"/>
+                        </element>
+                    </oneOrMore>
+                </optional>
+                <optional>
+                    <oneOrMore>
+                        <element name="author">
+                            <attribute name="id"/>
+                            <ref name="resource"/>
+                        </element>
+                    </oneOrMore>
+                </optional>
+                <optional>
+                    <element name="website">
+                        <ref name="resource"/>
+                    </element>
+                </optional>
+                <optional>
+                    <oneOrMore>
+                        <element name="xproc">
+                            <ref name="resource"/>
+                        </element>
+                    </oneOrMore>
+                </optional>
+                <optional>
+                    <oneOrMore>
+                        <element name="xquery">
+                            <ref name="resource"/>
+                        </element>
+                    </oneOrMore>
+                </optional>
+                <optional>
+                    <oneOrMore>
+                        <element name="css">
+                            <ref name="resource"/>
+                        </element>
+                    </oneOrMore>
+                </optional>
+                <optional>
+                    <oneOrMore>
+                        <element name="js">
+                            <ref name="resource"/>
+                        </element>
+                    </oneOrMore>
+                </optional>
+                <optional>
+                    <oneOrMore>
+                        <element name="schema">
+                            <attribute name="type"/>
+                            <ref name="resource"/>
+                        </element>
+                    </oneOrMore>
+                </optional>
+                <optional>
+                    <oneOrMore>
+                        <element name="xslt">
+                            <ref name="resource"/>
+                        </element>
+                    </oneOrMore>
+                </optional>
+            </interleave>
+        </element>
+    </define>
+    <define name="resource">
+        <optional>
+            <attribute name="vendor">
+                <text/>
+            </attribute>
+        </optional>
+        <optional>
+            <attribute name="version">
+                <text/>
+            </attribute>
+        </optional>
+        <optional>
+            <attribute name="required">
+                <text/>
+            </attribute>
+        </optional>
+        <optional>
+            <text/>
+        </optional>
+        <interleave>
+            <optional>
+                <element name="prefix">
+                    <text/>
+                </element>
+            </optional>
+            <optional>
+                <element name="namespace">
+                    <text/>
+                </element>
+            </optional>
+            <optional>
+                <element name="uri">
+                    <text/>
+                </element>
+            </optional>
+            <optional>
+                <element name="rel">
+                    <text/>
+                </element>
+            </optional>
+            <optional>
+                <element name="type">
+                    <text/>
+                </element>
+            </optional>
+            <optional>
+                <element name="source">
+                    <text/>
+                </element>
+            </optional>
+            <optional>
+                <element name="result">
+                    <text/>
+                </element>
+            </optional>
+        </interleave>
+    </define>
+</grammar>

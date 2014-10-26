@@ -7,9 +7,6 @@
  <license type="APLV2">
    <uri>http://google-code-prettify.googlecode.com/svn/trunk/COPYING</uri>
  </license>
- <repo type="git">
-     <uri>https://github.com/michaek/google-code-prettify-small</uri>
- </repo>
  <author id="">Mike Samuel</author>
  <website>http://code.google.com/p/google-code-prettify/</website>
  <js required="true">

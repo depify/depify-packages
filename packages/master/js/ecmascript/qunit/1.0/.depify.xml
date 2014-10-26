@@ -4,9 +4,6 @@
   <license type="GPL/MIT">
     <uri>?</uri>
   </license>
-  <repo type="?">
-    <uri>?</uri>
-  </repo>
   <author id="">John Resig</author>
   <author id="">Joern Zaefferer</author>
   <website>http://docs.jquery.com/QUnit</website>
