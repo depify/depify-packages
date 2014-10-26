@@ -42,7 +42,7 @@
     <p:input port="stylesheet">
       <p:inline>
         <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                        xmlns="https://github.com/xquery/depify"
+                        xmlns="https://github.com/depify"
                         version="2.0">
           <xsl:output method="xml" encoding="UTF8" omit-xml-declaration="yes" indent="no"/>
 
@@ -58,16 +58,15 @@
               </xsl:apply-templates>
           </xsl:template>
 
-          <xsl:template match="*:file[@name eq 'depify.xml']">
+          <xsl:template match="*:file[@name eq '.depify.xml']">
             <xsl:param name="base"/>
-            <xsl:variable name="package" select="doc(concat($base,'depify.xml'))"/>
+            <xsl:variable name="package" select="doc(concat($base,'.depify.xml'))"/>
             <xsl:element name="dep">
               <xsl:attribute name="path" select="concat('/packages/',substring-after($base,'/packages/'))"/>
               <xsl:copy-of select="$package/*/@*"/>
               <xsl:copy-of select="$package/*/*"/>
             </xsl:element>
           </xsl:template>
-
         </xsl:stylesheet>
       </p:inline>
     </p:input>

@@ -1,4 +1,4 @@
-<package xmlns="https://github.com/xquery/depify"
+<depify xmlns="https://github.com/xquery/depify"
          name="roxy"
          repo-uri="https://github.com/marklogic/roxy.git"
          version="1.0">
@@ -15,4 +15,4 @@
     <uri>https://github.com/marklogic/roxy.git</uri>
   </scm>
   <app/>
-</package>
+</depify>
