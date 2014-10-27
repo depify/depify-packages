@@ -11,9 +11,11 @@
                     <zeroOrMore>
                         <ref name="depify"></ref>
                     </zeroOrMore>
+                <optional>
                     <element name="title">
                         <ref name="resource"/>
                     </element>
+                </optional>
                 <optional>
                     <element name="desc">
                         <ref name="resource"/>
