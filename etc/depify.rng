@@ -8,11 +8,12 @@
             <attribute name="version"/>
             <attribute name="repo-uri"/>
             <interleave>
-                <optional>
+                    <zeroOrMore>
+                        <ref name="depify"></ref>
+                    </zeroOrMore>
                     <element name="title">
                         <ref name="resource"/>
                     </element>
-                </optional>
                 <optional>
                     <element name="desc">
                         <ref name="resource"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Copyright (c) 2011-2012 James Fuller
+  Copyright (c) 2014 James Fuller
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -63,43 +63,8 @@
 
   </p:for-each>
   <p:wrap-sequence name="aggregate" wrapper="packages" wrapper-namespace="https://github.com/depify"/>
+  <p:add-attribute attribute-name="ts" match="/depify:packages">
+    <p:with-option name="attribute-value" select="fn:current-dateTime()"/>
+  </p:add-attribute>
     
-  <!--p:xslt name="aggregate">
-    <p:input port="stylesheet">
-      <p:inline>
-        <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                        xmlns="https://github.com/depify"
-                        version="2.0">
-          <xsl:output method="xml" encoding="UTF8" omit-xml-declaration="yes" indent="no"/>
-
-          <xsl:template match="/">
-            <depify ts="{current-dateTime()}">
-              <xsl:apply-templates select="//*:directory"/>
-            </depify>
-          </xsl:template>
-
-          <xsl:template match="*:directory">
-              <xsl:apply-templates select="*:file">
-                <xsl:with-param name="base" select="@xml:base"/>
-              </xsl:apply-templates>
-          </xsl:template>
-
-          <xsl:template match="*:file[@name eq '.depify.xml']">
-            <xsl:param name="base"/>
-            <xsl:variable name="package" select="doc(concat($base,'.depify.xml'))"/>
-            <xsl:element name="dep">
-              <xsl:attribute name="path" select="concat('/packages/',substring-after($base,'/packages/'))"/>
-              <xsl:copy-of select="$package/*/@*"/>
-              <xsl:copy-of select="$package/*/*"/>
-            </xsl:element>
-          </xsl:template>
-        </xsl:stylesheet>
-      </p:inline>
-    </p:input>
-    <p:input port="parameters">
-      <p:empty/>
-    </p:input>   
-  </p:xslt-->
-
-
 </p:declare-step>
