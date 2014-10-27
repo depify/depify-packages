@@ -64,7 +64,7 @@
   </p:for-each>
   <p:wrap-sequence wrapper="packages" wrapper-namespace="https://github.com/depify"/>
   <p:add-attribute name="aggregate" attribute-name="ts" match="/depify:packages">
-    <p:with-option name="attribute-value" select="fn:current-dateTime()"/>
+    <p:with-option name="attribute-value" select="current-dateTime()"/>
   </p:add-attribute>
     
 </p:declare-step>
