@@ -3,14 +3,6 @@ depify-packages
 
 [![Build Status](https://travis-ci.org/depify/depify-packages.svg?branch=master)](https://travis-ci.org/depify/depify-packages)
 
-# Adding your own Packages
+This is the master repo containing [depify](http://depify.com) package metadata.
 
-
-
-# Publishing
-
-Publishing of packages runs with each commit and is controlled by travis.
-
-To regenerate a token for use by authenticated deployment of publishing artifacts, run
-
-```travis-encrypt -r depify/depify-packages GH_TOKEN={TOKEN-GENERATED-AT-DEPIFY-WEBSITE-GITHUB-API}```
+Go [here](https://github.com/depify/depify-packages/tree/master/packages) to learn how to submit your own package to the repo.
