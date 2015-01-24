@@ -1,4 +1,4 @@
-#Depify master package repo
+#depify master package repo
 
 To submit your own package to be included in the depify master repo;
 
