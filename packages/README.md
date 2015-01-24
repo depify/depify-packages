@@ -8,5 +8,5 @@ To submit your own package to be included in the depify repo
 
 ### Step 3. create a pull request with the change
 
-
+Once the pull request has been approved, the package will be available in the repo within a few minutes.
 
