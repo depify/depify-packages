@@ -3,7 +3,7 @@
          version="1.0"
          repo-uri="https://github.com/jpcs/xqueryparser.xq.git">
    <title>xqueryparser.xq</title>
-   <desc>An parser for XQuery 3.0 and MarkLogic extensions.</desc>
+   <desc>A parser for XQuery 3.0 and MarkLogic extensions.</desc>
    <license type="APLV2.0">
       <uri>https://github.com/jpcs/xqueryparser.xq/blob/master/LICENSE</uri>
    </license>
