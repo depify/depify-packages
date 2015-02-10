@@ -14,4 +14,5 @@
       <namespace>http://snelson.org.uk/functions/transform</namespace>
       <uri>transform.xq</uri>
    </xquery>
+   <depify name="rbtree.xq" version="1.0" repo-uri="https://github.com/jpcs/rbtree.xq.git"/>
 </depify>
