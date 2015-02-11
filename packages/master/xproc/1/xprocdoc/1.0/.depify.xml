@@ -8,6 +8,8 @@
    <author id="vojtechtoman">Vojtech Toman</author>
    <website>https://github.com/vojtechtoman/xprocdoc</website>
    <xproc version="1.0">
+      <prefix>xd</prefix>
+      <namespace>http://github.com/vojtechtoman/xprocdoc</namespace>
       <uri>xprocdoc.xpl</uri>
    </xproc>
 </depify>
