@@ -8,7 +8,7 @@
    <author id="vojtechtoman">Vojtech Toman</author>
    <website>https://github.com/vojtechtoman/xprocdoc</website>
    <xproc version="1.0">
-      <uri>xprocdoc.xpl</uri>
+      <uri name="urn:depify:xproc" uri="xprocdoc-master/xprocdoc.xpl"/>
    </xproc>
 </depify>
 
