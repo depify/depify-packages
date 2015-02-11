@@ -7,4 +7,4 @@ master repo containing all packages available to [depify](http://depify.com).
 
 [submit](https://github.com/depify/depify-packages/tree/master/packages) a package to the master repo.
 
-[browse](https://depify.com) packages. 
+[browse](http://depify.com) packages. 
