@@ -1,0 +1,14 @@
+<depify xmlns="https://github.com/depify"
+         name="xprocdoc"
+         version="1.0"
+         repo-uri="https://github.com/vojtechtoman/xprocdoc">
+   <title>xprocdoc</title>
+   <desc>A simple Javadoc-style XProc API documentation generator written in XProc and XSLT 2.0.</desc>
+   <license type="?"/>
+   <author id="vojtechtoman">Vojtech Toman</author>
+   <website>https://github.com/vojtechtoman/xprocdoc</website>
+   <xproc version="1.0">
+      <uri>xprocdoc.xpl</uri>
+   </xproc>
+</depify>
+
