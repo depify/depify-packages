@@ -124,6 +124,12 @@
                 </element>
             </optional>
             <optional>
+                <element name="catalog">
+                    <attribute name="name"/>
+                    <attribute name="uri"/>
+                </element>
+            </optional>
+            <optional>
                 <element name="rel">
                     <text/>
                 </element>
