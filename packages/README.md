@@ -12,4 +12,4 @@ To submit your own package to be included in the depify master repo;
 
 Pull requests are typically approved immediately, though if there is a problem raise an [issue](https://github.com/depify/depify-packages/issues).
 
-When pull request has been approved, a new [travis build](https://travis-ci.org/depify/depify-packages) will regenerate package metadata and should be available in a few minutes.
+When pull request has been approved, a new [travis build](https://travis-ci.org/depify/depify-packages) will regenerate package metadata. The package should be available to the depify-client within a few minutes.
