@@ -1,7 +1,7 @@
 <depify xmlns="https://github.com/depify"
          name="functional.xq"
          version="1.0"
-         repo-uri="git://github.com/jpcs/functional.xq.git">
+         repo-uri="https://github.com/jpcs/functional.xq">
   <title>functional.xq</title>
   <desc>A library of useful functionality for working with XQuery 3.0 higher order functions.
   Includes a number of functions from the standard Haskell prelude, as well as functions to
