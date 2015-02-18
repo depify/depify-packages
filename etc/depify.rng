@@ -125,8 +125,11 @@
             </optional>
             <optional>
                 <element name="catalog">
-                    <attribute name="name"/>
-                    <attribute name="uri"/>
+                  <attribute name="name"/>
+                  <optional>
+                    <attribute name="jar"/>
+                  </optional>
+                  <attribute name="uri"/>
                 </element>
             </optional>
             <optional>

@@ -8,7 +8,7 @@
    <author id="xquery">Jim Fuller</author>
    <website>https://github.com/xquery/calabash-java-step-example</website>
    <xproc version="1.0">     
-     <catalog name="urn:example-library" uri="jar:file:lib/xmlcalabash1-ext.jar!/example-library.xpl"/>
+     <catalog name="urn:example-library" jar="xmlcalabash1-ext.jar" uri="/example-library.xpl"/>
    </xproc>
 </depify>
 
