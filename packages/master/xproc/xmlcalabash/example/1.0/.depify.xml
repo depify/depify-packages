@@ -1,7 +1,7 @@
 <depify xmlns="https://github.com/depify"
          name="xmlcalabash1-ext"
          version="1.0"
-         repo-uri="https://github.com/xquery/calabash-java-step-example/releases/download/v1.0/xmlcalabash1-ext.jar.zip">
+         repo-uri="https://github.com/xquery/calabash-java-step-example">
    <title>xmlcalabash1-ext-</title>
    <desc>test of xmlcalabash java custom step.</desc>
    <license type="?"/>
