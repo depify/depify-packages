@@ -1,14 +1,14 @@
 <depify xmlns="https://github.com/depify"
-         name="xmlcalabash1-ext"
+         name="example-xproc-lib-java"
          version="1.0"
-         repo-uri="https://github.com/xquery/calabash-java-step-example">
-   <title>xmlcalabash1-ext-</title>
-   <desc>test of xmlcalabash java custom step.</desc>
+         repo-uri="https://github.com/xquery/calabash-java-step-example/releases/download/v1.0/example-library-ext.jar.zip">
+   <title>"example-xproc-lib-java</title>
+   <desc>example implementation of xproc library, in java, for XML Calabash.</desc>
    <license type="?"/>
    <author id="xquery">Jim Fuller</author>
    <website>https://github.com/xquery/calabash-java-step-example</website>
    <xproc version="1.0">     
-     <catalog name="urn:example-library" jar="xmlcalabash1-ext.jar" uri="/example-library.xpl"/>
+     <catalog name="urn:example-library" jar="example-library-ext.jar" uri="/example-library.xpl"/>
    </xproc>
 </depify>
 
