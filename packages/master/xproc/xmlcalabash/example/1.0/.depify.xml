@@ -1,8 +1,8 @@
 <depify xmlns="https://github.com/depify"
-         name="example-xproc-lib-java"
+         name="xmlcalabash-custom-step-java"
          version="1.0"
-         repo-uri="https://github.com/xquery/calabash-java-step-example">
-   <title>"example-xproc-lib-java</title>
+         repo-uri="https://github.com/xquery/xmlcalabash-custom-step-java">
+   <title>xmlcalabash-custom-step-java</title>
    <desc>example implementation of xproc library, in java, for XML Calabash.</desc>
    <license type="?"/>
    <author id="xquery">Jim Fuller</author>
