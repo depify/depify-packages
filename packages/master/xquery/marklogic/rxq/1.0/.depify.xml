@@ -2,4 +2,8 @@
          name="rxq"
          repo-uri="https://github.com/xquery/rxq.git"
          version="1.0">
+  <title>rxq</title>
+  <desc>Use RXQ to build MVC/RESTful apps with MarkLogic XQuery.</desc>
+  <license type="apachev2"/>
+  <author id="xquery">Jim Fuller</author>
 </depify>
