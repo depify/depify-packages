@@ -1,6 +1,6 @@
 <depify xmlns="https://github.com/depify"
          name="rxq"
-         repo-uri="https://github.com/xquery/rxq.git"
+         repo-uri="https://github.com/xquery/rxq"
          version="1.0">
   <title>rxq</title>
   <desc>Use RXQ to build MVC/RESTful apps with MarkLogic XQuery.</desc>

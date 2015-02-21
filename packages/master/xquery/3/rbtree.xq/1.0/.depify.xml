@@ -1,7 +1,7 @@
 <depify xmlns="https://github.com/depify"
          name="rbtree.xq"
          version="1.0"
-         repo-uri="https://github.com/jpcs/rbtree.xq.git">
+         repo-uri="https://github.com/jpcs/rbtree.xq">
   <title>rbtree.xq</title>
   <desc>An implementation of a red/black tree built using XQuery 3.0 higher order functions, and an associative map library built on top of it..</desc>
   <license type="APLV2.0">
