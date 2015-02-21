@@ -44,8 +44,12 @@
                 </optional>
                 <optional>
                     <oneOrMore>
-                        <element name="xproc">
-                            <ref name="resource"/>
+                      <element name="xproc">
+                        <optional>
+                          <attribute name="jar"/>
+                          <attribute name="library-uri"/>
+                        </optional>
+                        <ref name="resource"/>
                         </element>
                     </oneOrMore>
                 </optional>
@@ -148,9 +152,17 @@
                 </element>
             </optional>
             <optional>
-                <element name="result">
-                    <text/>
-                </element>
+              <element name="result">
+                <text/>
+              </element>
+            </optional>
+            <optional>
+              <element name="step">
+                <optional>
+                  <ref name="resource"/>
+                </optional>  
+                <text/>
+              </element>
             </optional>
         </interleave>
     </define>
