@@ -1,0 +1,11 @@
+<depify xmlns="https://github.com/depify"
+         name="xprocspec"
+         version="1.1.0"
+         repo-uri="https://github.com/daisy/xprocspec">
+   <title>xprocspec</title>
+   <desc>This is a tool for testing XProc scripts. Its grammar is inspired by XSpec and is implemented in XProc.</desc>
+   <license type="?"/>
+   <author id="josteinaj">Jostein Austvik Jacobsen</author>
+   <website>http://daisy.github.io/xprocspec/</website>
+   <xproc version="1.0"/>
+</depify>
