@@ -1,7 +1,7 @@
 <depify xmlns="https://github.com/depify"
          name="xslt-relax-ng"
          version="1.0"
-         repo-uri="https://github.com/ndw/xslt-relax-ng.git">
+         repo-uri="https://github.com/ndw/xslt-relax-ng">
  <title>RelaxNG schemas for XSLT 1 &amp; XSLT 2</title>
   <desc>
     This project provides RELAX NG grammars for XSLT stylesheets. Because stylesheets are required to have a version number, it's straightforward for a RELAX NG validator to choose between the xslt10.rnc and xslt20.rnc grammars.

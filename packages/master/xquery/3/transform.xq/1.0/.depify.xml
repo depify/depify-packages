@@ -1,7 +1,7 @@
 <depify xmlns="https://github.com/depify"
          name="transform.xq"
          version="1.0"
-         repo-uri="https://github.com/jpcs/transform.xq.git">
+         repo-uri="https://github.com/jpcs/transform.xq">
    <title>transform.xq</title>
    <desc>An extensible transformation library for XQuery 3.0.</desc>
    <license type="APLV2.0">
@@ -14,5 +14,4 @@
       <namespace>http://snelson.org.uk/functions/transform</namespace>
       <uri>transform.xq</uri>
    </xquery>
-   <depify name="rbtree.xq" version="1.0" repo-uri="https://github.com/jpcs/rbtree.xq.git"/>
 </depify>

@@ -1,7 +1,7 @@
 <depify xmlns="https://github.com/depify"
          name="data.xq"
          version="1.0"
-         repo-uri="https://github.com/jpcs/data.xq.git">
+         repo-uri="https://github.com/jpcs/data.xq">
    <title>xqueryparser.xq</title>
    <desc>An XQuery 3.0 library for defining algebraic data types, and performing structural pattern matching on them..</desc>
    <license type="APLV2.0">
