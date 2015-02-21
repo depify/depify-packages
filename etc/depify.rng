@@ -46,6 +46,7 @@
                     <oneOrMore>
                       <element name="xproc">
                         <optional>
+                          <attribute name="ns"/>
                           <attribute name="jar"/>
                           <attribute name="library-uri"/>
                         </optional>
