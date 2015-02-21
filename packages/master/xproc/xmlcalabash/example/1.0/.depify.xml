@@ -7,8 +7,8 @@
    <license type="?"/>
    <author id="xquery">Jim Fuller</author>
    <website>https://github.com/xquery/calabash-java-step-example</website>
-   <xproc version="1.0">     
-     <catalog name="urn:example-library" jar="example-library-ext.jar" uri="/example-library.xpl"/>
+   <xproc version="1.0" jar="example-library-ext.jar" library-uri="/example-library.xpl">
+     <!--catalog name="urn:example-library" jar="example-library-ext.jar" uri="/example-library.xpl"/-->
    </xproc>
 </depify>
 
