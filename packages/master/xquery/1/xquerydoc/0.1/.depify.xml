@@ -1,0 +1,17 @@
+<depify xmlns="https://github.com/depify"
+        name="xquerydoc"
+        version="0.1"
+        repo-uri="https://github.com/xquery/xquerydoc">
+  <title>xquerydoc</title>
+  <desc>generate XQuery API documentation from your source code comments.</desc>
+  <license type="APLV2">
+    <uri>https://github.com/xquery/xquerydoc/blob/master/LICENCE</uri>
+  </license>
+  <author id="jpcs">John Snelson</author>
+  <author id="xquery">Jim Fuller</author>
+  <xquery version="1.0">
+    <prefix>xqdoc</prefix>
+    <namespace>http://github.com/xquery/xquerydoc</namespace>
+    <uri>xquerydoc.xq</uri>
+  </xquery>
+</depify>
