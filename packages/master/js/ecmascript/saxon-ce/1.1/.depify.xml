@@ -9,5 +9,5 @@ Unlike previous releases, Saxon-CE 1.1 is open-source software.
   </desc>
   <license type="MPL-V2.0"/>
   <author id="">Saxonica</author>
-  <website>http://www.saxonica.com/ce/index.xml/</website>
+  <website>http://www.saxonica.com/ce/index.xml</website>
 </depify>
