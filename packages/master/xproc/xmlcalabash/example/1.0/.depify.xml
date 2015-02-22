@@ -10,7 +10,7 @@
    <xproc version="1.0"
           ns="http://example.org/xmlcalabash/steps"
           jar="example-library-ext.jar"
-          library-uri="/example-library.xpl">
+          library-uri="!/example-library.xpl">
      <!--catalog name="urn:example-library" jar="example-library-ext.jar" uri="/example-library.xpl"/-->
    </xproc>
 </depify>
