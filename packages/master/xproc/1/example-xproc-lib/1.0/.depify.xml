@@ -9,7 +9,7 @@
    <website>https://github.com/xquery/example-xproc-lib</website>
    <xproc version="1.0"
           ns="https://github.com/xquery/example-xproc-lib/ns"
-          library-uri="library.xpl">
+          library-uri="example-xproc-lib-master/library.xpl">
    </xproc>
 </depify>
 
