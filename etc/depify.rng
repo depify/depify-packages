@@ -47,7 +47,9 @@
                       <element name="xproc">
                         <optional>
                           <attribute name="ns"/>
-                          <attribute name="jar"/>
+                          <optional>
+                            <attribute name="jar"/>
+                          </optional>
                           <attribute name="library-uri"/>
                         </optional>
                         <ref name="resource"/>
