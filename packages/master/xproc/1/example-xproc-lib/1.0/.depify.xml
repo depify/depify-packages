@@ -1,0 +1,15 @@
+<depify xmlns="https://github.com/depify"
+         name="example-xproc-lib"
+         version="1.0"
+         repo-uri="https://github.com/xquery/example-xproc-lib">
+   <title>example-xproc-lib</title>
+   <desc>example implementation of xproc library, demonstrating depify packaging.</desc>
+   <license type="?"/>
+   <author id="xquery">Jim Fuller</author>
+   <website>https://github.com/xquery/example-xproc-lib</website>
+   <xproc version="1.0"
+          ns="https://github.com/xquery/example-xproc-lib/ns"
+          library-uri="library.xpl">
+   </xproc>
+</depify>
+
