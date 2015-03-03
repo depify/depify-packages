@@ -3,7 +3,7 @@ depify-packages
 
 [![Build Status](https://travis-ci.org/depify/depify-packages.svg?branch=master)](https://travis-ci.org/depify/depify-packages)
 
-depify package repo containing all available package metadata.
+depify package repo containing all available package metadata. 
 
 ## useful links
 
