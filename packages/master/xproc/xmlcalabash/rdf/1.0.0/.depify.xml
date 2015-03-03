@@ -9,8 +9,8 @@
    <website>https://github.com/xquery/xmlcalabash1-rdf</website>
    <xproc version="1.0"
           ns="http://xmlcalabash.com/ns/extensions"
-          jar="xmlcalabsh1-xcc.jar"
-          library-uri="!/resources/library.xpl">
+          jar="xmlcalabash1-xcc.jar"
+          library-uri="!/library.xpl">
    </xproc>
 </depify>
 
