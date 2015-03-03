@@ -1,0 +1,16 @@
+<depify xmlns="https://github.com/depify"
+         name="xmlcalabash1-xcc"
+         version="1.0.0"
+         repo-uri="https://github.com/xquery/xmlcalabash1-xcc">
+   <title>xmlcalabash1-xcc</title>
+   <desc>XML Calabash 1.0 extension steps that provide access to MarkLogic databases via XCC.</desc>
+   <license type="?"/>
+   <author id="ndw">Norm Walsh</author>
+   <website>https://github.com/xquery/xmlcalabash1-xcc</website>
+   <xproc version="1.0"
+          ns="http://xmlcalabash.com/ns/extensions"
+          jar="xmlcalabsh1-xcc.jar"
+          library-uri="!/resources/library.xpl">
+   </xproc>
+</depify>
+
