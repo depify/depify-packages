@@ -1,0 +1,15 @@
+<depify xmlns="https://github.com/depify"
+         name="xmlspectrum"
+         version="1.0"
+         repo-uri="https://github.com/pgfearo/xmlspectrum">
+ <title>xmlspectrum</title>
+ <desc>Syntax-highlighter and formatter for XQuery 3.0 , XSLT 3.0 and XPath 3.0 and any hosting XML</desc>
+ <license type="APLv2"/>
+ <author id="pgfearo">Philip Fearon</author>
+ <website>https://github.com/pgfearo/xmlspectrum</website>
+ <xslt version="2.0">
+   <prefix></prefix>
+   <namespace></namespace>
+   <uri>xmlspectrum.xsl</uri>
+ </xslt>
+</depify>
