@@ -1,0 +1,15 @@
+<depify xmlns="https://github.com/depify"
+        name="xmlcalabash1-plantuml"
+        version="1.0.0"
+        repo-uri="https://github.com/ndw/xmlcalabash1-plantuml">
+  <title>xmlcalabash1-plantuml</title>
+  <desc>XML Calabash 1.0 extension step for PlantUML diagrams</desc>
+  <license type="?"/>
+  <author id="ndw">Norman Walsh</author>
+  <website>https://github.com/ndw/xmlcalabash1-plantuml</website>
+  <xproc version="1.0"
+         ns="http://xmlcalabash.com/ns/extensions"
+         jar="xmlcalabash1-plantuml-1.0.0/xmlcalabash1-plantuml-1.0.0.jar"
+         library-uri="!/library.xpl">
+  </xproc>
+</depify>
