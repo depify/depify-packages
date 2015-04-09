@@ -1,0 +1,15 @@
+<depify xmlns="https://github.com/depify"
+        name="xmlcalabash1-rdf"
+        version="1.1.0"
+        repo-uri="https://github.com/ndw/xmlcalabash1-rdf">
+  <title>xmlcalabash1-rdf</title>
+  <desc>XML Calabash 1.0 extension step for RDF</desc>
+  <license type="?"/>
+  <author id="ndw">Norman Walsh</author>
+  <website>https://github.com/ndw/xmlcalabash1-rdf</website>
+  <xproc version="1.0"
+         ns="http://xmlcalabash.com/ns/extensions"
+         jar="xmlcalabash1-rdf-1.1.0/xmlcalabash1-rdf-1.1.0.jar"
+         library-uri="!/library.xpl">
+  </xproc>
+</depify>
