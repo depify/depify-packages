@@ -1,0 +1,15 @@
+<depify xmlns="https://github.com/depify"
+        name="xmlcalabash1-ditaa"
+        version="1.1.0"
+        repo-uri="https://github.com/ndw/xmlcalabash1-ditaa">
+  <title>xmlcalabash1-ditaa</title>
+  <desc>XML Calabash 1.0 extension step for DiTAA diagrams</desc>
+  <license type="?"/>
+  <author id="ndw">Norman Walsh</author>
+  <website>https://github.com/ndw/xmlcalabash1-ditaa</website>
+  <xproc version="1.0"
+         ns="http://xmlcalabash.com/ns/extensions"
+         jar="xmlcalabash1-ditaa-1.1.0/xmlcalabash1-ditaa-1.1.0.jar"
+         library-uri="!/library.xpl">
+  </xproc>
+</depify>
