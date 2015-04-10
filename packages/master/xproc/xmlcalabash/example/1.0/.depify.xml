@@ -9,7 +9,7 @@
    <website>https://github.com/xquery/calabash-java-step-example</website>
    <xproc version="1.0"
           ns="http://example.org/xmlcalabash/steps"
-          jar="example-library-ext/example-library-ext.jar"
+          jar="example-library-ext.jar/example-library-ext.jar"
           library-uri="!/example-library.xpl">
      <!--catalog name="urn:example-library" jar="example-library-ext.jar" uri="/example-library.xpl"/-->
    </xproc>
