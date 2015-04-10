@@ -1,9 +1,10 @@
 <depify xmlns="https://github.com/depify"
          name="xmlcalabash-ext-step-java"
          version="1.0"
-         repo-uri="https://github.com/xquery/xmlcalabash-ext-step-java">
+         repo-uri="https://github.com/xquery/xmlcalabash-ext-step-java"
+         keep-fresh="true">
    <title>xmlcalabash-ext-step-java</title>
-   <desc>example implementation of xproc extension step library, in java, for XML Calabash.</desc>
+   <desc>example impl of xproc extension step library, in java, for XML Calabash.</desc>
    <license type="?"/>
    <author id="xquery">Jim Fuller</author>
    <website>https://github.com/xquery/calabash-java-step-example</website>
