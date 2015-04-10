@@ -49,9 +49,24 @@
     </p:load>
     
     <cx:message>
-      <p:with-option name="message" select="$file"/>
+      <p:with-option name="message" select="concat('processing ',/depify:depify/@name,' ',/depify:depify/@version)"/>
     </cx:message>
 
+    <p:choose>
+      <p:when test="/depify:depify/@keep-fresh eq 'true'">
+        <p:variable name="keep-fresh-repo-version" select="concat('https://raw.githubusercontent.com',substring-after(/depify:depify/@repo-uri,'https://github.com'),'/',@version,'/.depify.xml')"/>
+        <p:variable name="keep-fresh-repo-master" select="concat('https://raw.githubusercontent.com',substring-after(/depify:depify/@repo-uri,'https://github.com'),'/master/.depify.xml')"/>
+        <cx:message>
+          <p:with-option name="message" select="concat('keep-fresh enabled, downloading from ',$keep-fresh-repo-version)"/>
+        </cx:message>    
+        <p:load>
+          <p:with-option name="href" select="if(doc-available($keep-fresh-repo-version)) then $keep-fresh-repo-version else $keep-fresh-repo-master"/>
+    </p:load>
+      </p:when>
+    <p:otherwise>
+      <p:identity/>
+    </p:otherwise>
+    </p:choose>
      <p:validate-with-relax-ng assert-valid="true">
       <p:input port="schema">
         <p:document href="../../etc/depify.rng"/>

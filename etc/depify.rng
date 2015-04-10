@@ -7,6 +7,9 @@
             <attribute name="name"/>
             <attribute name="version"/>
             <attribute name="repo-uri"/>
+            <optional>
+              <attribute name="keep-fresh"/>              
+            </optional>
             <interleave>
                     <zeroOrMore>
                         <ref name="depify"></ref>
