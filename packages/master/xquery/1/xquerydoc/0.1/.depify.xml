@@ -14,4 +14,8 @@
     <namespace>http://github.com/xquery/xquerydoc</namespace>
     <uri>xquerydoc.xq</uri>
   </xquery>
+  <xproc version="1.0"
+         ns="http://github.com/xquery/xquerydoc"
+         library-uri="xquerydoc-master/xquerydoc.xpl">
+  </xproc>
 </depify>
