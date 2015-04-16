@@ -1,6 +1,6 @@
 <depify xmlns="https://github.com/depify"
         name="xmlcalabash1-mathml-to-svg"
-        version="1.1.1"
+        version="1.1.2"
         repo-uri="https://github.com/ndw/xmlcalabash1-mathml-to-svg">
   <title>xmlcalabash1-mathml-to-svg</title>
   <desc>XML Calabash 1.0 extension step for converting MathML to SVG</desc>
@@ -9,7 +9,7 @@
   <website>https://github.com/ndw/xmlcalabash1-mathml-to-svg</website>
   <xproc version="1.0"
          ns="http://xmlcalabash.com/ns/extensions"
-         jar="xmlcalabash1-mathml-to-svg-1.1.1/xmlcalabash1-mathml-to-svg-1.1.1.jar"
+         jar="xmlcalabash1-mathml-to-svg-1.1.2/xmlcalabash1-mathml-to-svg-1.1.2.jar"
          library-uri="!/library.xpl">
   </xproc>
 </depify>

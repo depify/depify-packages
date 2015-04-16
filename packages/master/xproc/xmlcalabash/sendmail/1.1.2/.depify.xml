@@ -1,6 +1,6 @@
 <depify xmlns="https://github.com/depify"
         name="xmlcalabash1-sendmail"
-        version="1.1.1"
+        version="1.1.2"
         repo-uri="https://github.com/ndw/xmlcalabash1-sendmail">
   <title>xmlcalabash1-sendmail</title>
   <desc>XML Calabash 1.0 extension step for sending email</desc>
@@ -9,7 +9,7 @@
   <website>https://github.com/ndw/xmlcalabash1-sendmail</website>
   <xproc version="1.0"
          ns="http://xmlcalabash.com/ns/extensions"
-         jar="xmlcalabash1-sendmail-1.1.1/xmlcalabash1-sendmail-1.1.1.jar"
+         jar="xmlcalabash1-sendmail-1.1.2/xmlcalabash1-sendmail-1.1.2.jar"
          library-uri="!/library.xpl">
   </xproc>
 </depify>
