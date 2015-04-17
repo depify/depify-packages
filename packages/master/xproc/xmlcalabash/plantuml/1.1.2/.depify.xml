@@ -1,6 +1,6 @@
 <depify xmlns="https://github.com/depify"
         name="xmlcalabash1-plantuml"
-        version="1.1.1"
+        version="1.1.2"
         repo-uri="https://github.com/ndw/xmlcalabash1-plantuml">
   <title>xmlcalabash1-plantuml</title>
   <desc>XML Calabash 1.0 extension step for PlantUML diagrams</desc>
@@ -9,7 +9,7 @@
   <website>https://github.com/ndw/xmlcalabash1-plantuml</website>
   <xproc version="1.0"
          ns="http://xmlcalabash.com/ns/extensions"
-         jar="xmlcalabash1-plantuml-1.1.1/xmlcalabash1-plantuml-1.1.1.jar"
+         jar="xmlcalabash1-plantuml-1.1.2/xmlcalabash1-plantuml-1.1.2.jar"
          library-uri="!/library.xpl">
   </xproc>
 </depify>

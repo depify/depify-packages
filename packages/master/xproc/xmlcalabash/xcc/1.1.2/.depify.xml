@@ -1,6 +1,6 @@
 <depify xmlns="https://github.com/depify"
         name="xmlcalabash1-xcc"
-        version="1.1.1"
+        version="1.1.2"
         repo-uri="https://github.com/ndw/xmlcalabash1-xcc">
   <title>xmlcalabash1-xcc</title>
   <desc>XML Calabash 1.0 MarkLogic XCC extension steps</desc>
@@ -9,7 +9,7 @@
   <website>https://github.com/ndw/xmlcalabash1-xcc</website>
   <xproc version="1.0"
          ns="http://xmlcalabash.com/ns/extensions"
-         jar="xmlcalabash1-xcc-1.1.1/xmlcalabash1-xcc-1.1.1.jar"
+         jar="xmlcalabash1-xcc-1.1.2/xmlcalabash1-xcc-1.1.2.jar"
          library-uri="!/library.xpl">
   </xproc>
 </depify>
